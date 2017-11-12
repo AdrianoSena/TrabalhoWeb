@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8"/>
+<title>CADASTRO DE CLIENTESP</title>
+<link rel="stylesheet" href="css/estiloCadastro.css">
+
+<script type="text/javascript">
+  function validaCampo() {
+    if (document.cadastro.nome.value == "") {
+      alert("O Campo nome é obrigatório!");
+      return false;
+    }
+    else
+      if (document.cadastro.email.value == "") {
+        alert("O Campo email é obrigatório!");
+        return false;
+      }
+      else
+        if (document.cadastro.cpf.value == "") {
+          alert("O Campo CPF é obrigatório!");
+          return false;
+        }
+        else
+          if (document.cadastro.login.value == "") {
+            alert("O Campo Login é obrigatório!");
+            return false;
+          }
+          else
+            if (document.cadastro.senha.value == "") {
+              alert("Digite uma senha!");
+              return false;
+            }
+            else
+              return true;
+  }
+
+</script>
+</head>
+
+<body>
+<form id="cadastro" name="cadastro" method="post" action="validaCadastro.php" onsubmit="return validaCampo(); return false;">
+  <table width="625" border="0">
+    <tr>
+      <td width="69">Login:</td>
+      <td width="546">
+        <input name="login" type="text" id="login" size="70" maxlength="60" />
+        <span class="style1">*</span>
+      </td>
+    </tr>
+    <tr>
+      <td width="69">senha:</td>
+      <td width="546">
+        <input name="senha" type="text" id="senha" size="70" maxlength="60" />
+        <span class="style1">*</span>
+      </td>
+    </tr>
+    <tr>
+      <td width="69">Nome:</td>
+      <td width="546">
+        <input name="nome" type="text" id="nome" size="70" maxlength="60" />
+        <span class="style1">*</span>
+      </td>
+    </tr>
+    <tr>
+      <td width="69">email:</td>
+      <td width="546">
+        <input name="email" type="email" id="email" size="70" maxlength="60" />
+        <span class="style1">*</span>
+      </td>
+    </tr>
+    <tr>
+      <td width="69">cpf:</td>
+      <td width="546">
+        <input name="cpf" type="text" id="cpf" size="70" maxlength="60" />
+        <span class="style1">*</span>
+      </td>
+    </tr>
+    <tr>
+      <tr>
+        <td colspan="2">
+          <p>
+            <input name="cadastrar" type="submit" id="cadastrar" value="Concluir meu Cadastro!" />
+            <br />
+            <input name="limpar" type="reset" id="limpar" value="Limpar Campos preenchidos!" />
+            <br />
+            <span class="style1">* Campos com * s&atilde;o obrigat&oacute;rios! </span>
+          </p>
+          <p>&nbsp; </p>
+        </td>
+      </tr>
+  </table>
+</form>
+</body>
+</html>
