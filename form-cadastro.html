@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Formulário de Cadastro</title>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab:400,700|Pacifico' rel='stylesheet' type='text/css'>
+         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/cadastro.css">
+
+</head>
+<body>
+    <div id="barraNav">
+    <nav>
+        <a href="#" id="logo">Normandy</a>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#sobre">SOBRE NÓS</a></li>
+            <li><a href="#portfolio">PRODUTOS</a></li>
+            <li><a href="#contato">CADASTRO</a></li>
+            <li><a href="login.html">LOGIN</a>
+        </ul>
+    </nav>
+    </div>
+    
+    
+		<div class="container">
+		<div class="principal">
+		<h1>Formulário De Cadastro</h1>
+		<table class="table">
+			<form action="cadastro.php" method="post">
+					<tr>
+						<th>Nome: </th>
+						<td>
+							<input class="form-control" type="text" name="nome" placeholder="Nome">
+						</td>
+					</tr>
+						<th>Login: </th>
+						<td>
+							<input class="form-control" type="text" name="login" placeholder="Login">
+						</td>
+					<tr>
+						<th>Senha: </th>
+						<td>
+							<input class="form-control" type="password" name="senha" placeholder="Digite sua senha">
+						</td>
+					</tr>
+						<th>Email: </th>
+						<td>
+							<input class="form-control" type="email" name="email" placeholder="Digite seu email">
+						</td>
+					<tr>
+						<th>CPF: </th>
+						<td>
+							<input class="form-control" type="text" name="cpf" placeholder="Digite aqui o seu CPF">
+						</td>
+					</tr>
+					<tr>
+						<th> Cadastrar: </th>
+						<td>
+							<input type="submit" value="cadastrar">
+						</td>
+					</tr>
+
+			</form>
+		</table>
+	</div>
+</div>
+</body>
+</html>
